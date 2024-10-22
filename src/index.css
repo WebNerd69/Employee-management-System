@@ -2,9 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family:Helvetica;
+  src: url(Helvetica.ttf);
+}
+
 body {
   background-color: #18181b;
 }
 *{
      color: #fff;
+     font-family:Helvetica;
+}
+#cardSlider::-webkit-scrollbar{
+  display: none;
+}
+#desc{
+  resize: none;
 }
