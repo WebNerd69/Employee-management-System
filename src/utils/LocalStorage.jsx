@@ -1,11 +1,18 @@
 const employees = [
      {
           id: 1,
-          name: "John Doe",
+          name: "John Doe", 
           email: "john.doe@example.com",
           username: "john.doe@example.com",
           password: "1234",
           is_admin: false,
+          taskCount: {
+               active: 5,
+               new: 3,
+               accepted: 3,
+               completed: 0,
+               failed: 0
+          },
           tasks: [
                {
                     title: "Create project proposal",
@@ -15,7 +22,8 @@ const employees = [
                     is_new: true,
                     is_accepted: false,
                     is_failed: false,
-                    is_active: true
+                    is_active: true,
+                    priority: "high"
                },
                {
                     title: "Review code changes",
@@ -25,7 +33,8 @@ const employees = [
                     is_new: true,
                     is_accepted: true,
                     is_failed: false,
-                    is_active: true
+                    is_active: true,
+                    priority: "medium"
                },
                {
                     title: "Update documentation",
@@ -35,7 +44,8 @@ const employees = [
                     is_new: false,
                     is_accepted: true,
                     is_failed: false,
-                    is_active: true
+                    is_active: true,
+                    priority: "low"
                },
                {
                     title: "Attend team meeting",
@@ -45,7 +55,8 @@ const employees = [
                     is_new: false,
                     is_accepted: true,
                     is_failed: false,
-                    is_active: true
+                    is_active: true,
+                    priority: "medium"
                },
                {
                     title: "Complete training module",
@@ -55,7 +66,8 @@ const employees = [
                     is_new: true,
                     is_accepted: false,
                     is_failed: false,
-                    is_active: true
+                    is_active: true,
+                    priority: "low"
                }
           ]
      },
@@ -66,6 +78,13 @@ const employees = [
           username: "jane.smith@example.com",
           password: "1234",
           is_admin: false,
+          taskCount: {
+               active: 5,
+               new: 3,
+               accepted: 3,
+               completed: 0,
+               failed: 0
+          },
           tasks: [
                {
                     title: "Design new user interface",
@@ -75,7 +94,8 @@ const employees = [
                     is_new: true,
                     is_accepted: true,
                     is_failed: false,
-                    is_active: true
+                    is_active: true,
+                    priority: "high"
                },
                {
                     title: "Implement responsive design",
@@ -85,7 +105,8 @@ const employees = [
                     is_new: false,
                     is_accepted: true,
                     is_failed: false,
-                    is_active: true
+                    is_active: true,
+                    priority: "high"
                },
                {
                     title: "Conduct user testing",
@@ -95,7 +116,8 @@ const employees = [
                     is_new: true,
                     is_accepted: false,
                     is_failed: false,
-                    is_active: true
+                    is_active: true,
+                    priority: "medium"
                },
                {
                     title: "Create style guide",
@@ -105,7 +127,8 @@ const employees = [
                     is_new: false,
                     is_accepted: true,
                     is_failed: false,
-                    is_active: true
+                    is_active: true,
+                    priority: "medium"
                },
                {
                     title: "Optimize image assets",
@@ -115,7 +138,8 @@ const employees = [
                     is_new: true,
                     is_accepted: false,
                     is_failed: false,
-                    is_active: true
+                    is_active: true,
+                    priority: "low"
                }
           ]
      },
@@ -126,6 +150,13 @@ const employees = [
           username: "michael.johnson@example.com",
           password: "1234",
           is_admin: false,
+          taskCount: {
+               active: 5,
+               new: 3,
+               accepted: 3,
+               completed: 0,
+               failed: 0
+          },
           tasks: [
                {
                     title: "Develop API endpoints",
@@ -135,7 +166,8 @@ const employees = [
                     is_new: true,
                     is_accepted: true,
                     is_failed: false,
-                    is_active: true
+                    is_active: true,
+                    priority: "high"
                },
                {
                     title: "Optimize database queries",
@@ -145,7 +177,8 @@ const employees = [
                     is_new: false,
                     is_accepted: true,
                     is_failed: false,
-                    is_active: true
+                    is_active: true,
+                    priority: "high"
                },
                {
                     title: "Implement caching mechanism",
@@ -155,7 +188,8 @@ const employees = [
                     is_new: true,
                     is_accepted: false,
                     is_failed: false,
-                    is_active: true
+                    is_active: true,
+                    priority: "medium"
                },
                {
                     title: "Write unit tests",
@@ -165,7 +199,8 @@ const employees = [
                     is_new: false,
                     is_accepted: true,
                     is_failed: false,
-                    is_active: true
+                    is_active: true,
+                    priority: "medium"
                },
                {
                     title: "Refactor legacy code",
@@ -175,7 +210,8 @@ const employees = [
                     is_new: true,
                     is_accepted: false,
                     is_failed: false,
-                    is_active: true
+                    is_active: true,
+                    priority: "low"
                }
           ]
      },
@@ -186,6 +222,13 @@ const employees = [
           username: "emily.brown@example.com",
           password: "1234",
           is_admin: false,
+          taskCount: {
+               active: 5,
+               new: 3,
+               accepted: 3,
+               completed: 0,
+               failed: 0
+          },
           tasks: [
                {
                     title: "Create marketing campaign",
@@ -195,7 +238,8 @@ const employees = [
                     is_new: true,
                     is_accepted: true,
                     is_failed: false,
-                    is_active: true
+                    is_active: true,
+                    priority: "high"
                },
                {
                     title: "Analyze user feedback",
@@ -205,7 +249,8 @@ const employees = [
                     is_new: false,
                     is_accepted: true,
                     is_failed: false,
-                    is_active: true
+                    is_active: true,
+                    priority: "medium"
                },
                {
                     title: "Prepare sales presentation",
@@ -215,7 +260,8 @@ const employees = [
                     is_new: true,
                     is_accepted: false,
                     is_failed: false,
-                    is_active: true
+                    is_active: true,
+                    priority: "high"
                },
                {
                     title: "Conduct market research",
@@ -225,7 +271,8 @@ const employees = [
                     is_new: false,
                     is_accepted: true,
                     is_failed: false,
-                    is_active: true
+                    is_active: true,
+                    priority: "medium"
                },
                {
                     title: "Plan social media strategy",
@@ -235,7 +282,8 @@ const employees = [
                     is_new: true,
                     is_accepted: false,
                     is_failed: false,
-                    is_active: true
+                    is_active: true,
+                    priority: "low"
                }
           ]
      },
@@ -246,6 +294,13 @@ const employees = [
           username: "david.wilson@example.com",
           password: "1234",
           is_admin: false,
+          taskCount: {
+               active: 5,
+               new: 3,
+               accepted: 3,
+               completed: 0,
+               failed: 0
+          },
           tasks: [
                {
                     title: "Set up CI/CD pipeline",
@@ -255,7 +310,8 @@ const employees = [
                     is_new: true,
                     is_accepted: true,
                     is_failed: false,
-                    is_active: true
+                    is_active: true,
+                    priority: "high"
                },
                {
                     title: "Configure monitoring tools",
@@ -265,7 +321,8 @@ const employees = [
                     is_new: false,
                     is_accepted: true,
                     is_failed: false,
-                    is_active: true
+                    is_active: true,
+                    priority: "high"
                },
                {
                     title: "Perform security audit",
@@ -275,7 +332,8 @@ const employees = [
                     is_new: true,
                     is_accepted: false,
                     is_failed: false,
-                    is_active: true
+                    is_active: true,
+                    priority: "high"
                },
                {
                     title: "Optimize server performance",
@@ -285,7 +343,8 @@ const employees = [
                     is_new: false,
                     is_accepted: true,
                     is_failed: false,
-                    is_active: true
+                    is_active: true,
+                    priority: "medium"
                },
                {
                     title: "Implement backup strategy",
@@ -295,7 +354,8 @@ const employees = [
                     is_new: true,
                     is_accepted: false,
                     is_failed: false,
-                    is_active: true
+                    is_active: true,
+                    priority: "high"
                }
           ]
      },
@@ -306,6 +366,13 @@ const employees = [
           username: "emily.brown@example.com",
           password: "1234",
           is_admin: false,
+          taskCount: {
+               active: 5,
+               new: 3,
+               accepted: 3,
+               completed: 0,
+               failed: 0
+          },
           tasks: [
                {
                     title: "Develop mobile app",
@@ -315,7 +382,8 @@ const employees = [
                     is_new: true,
                     is_accepted: true,
                     is_failed: false,
-                    is_active: true
+                    is_active: true,
+                    priority: "high"
                },
                {
                     title: "Implement push notifications",
@@ -325,7 +393,8 @@ const employees = [
                     is_new: false,
                     is_accepted: true,
                     is_failed: false,
-                    is_active: true
+                    is_active: true,
+                    priority: "medium"
                },
                {
                     title: "Conduct user testing for mobile app",
@@ -335,7 +404,8 @@ const employees = [
                     is_new: true,
                     is_accepted: false,
                     is_failed: false,
-                    is_active: true
+                    is_active: true,
+                    priority: "high"
                },
                {
                     title: "Optimize app performance",
@@ -345,7 +415,8 @@ const employees = [
                     is_new: false,
                     is_accepted: true,
                     is_failed: false,
-                    is_active: true
+                    is_active: true,
+                    priority: "medium"
                },
                {
                     title: "Implement offline mode",
@@ -355,7 +426,8 @@ const employees = [
                     is_new: true,
                     is_accepted: false,
                     is_failed: false,
-                    is_active: true
+                    is_active: true,
+                    priority: "low"
                }
           ]
      },
@@ -366,6 +438,13 @@ const employees = [
           username: "michael.johnson@example.com",
           password: "1234",
           is_admin: false,
+          taskCount: {
+               active: 5,
+               new: 3,
+               accepted: 3,
+               completed: 0,
+               failed: 0
+          },
           tasks: [
                {
                     title: "Create data visualization dashboard",
@@ -375,7 +454,8 @@ const employees = [
                     is_new: true,
                     is_accepted: true,
                     is_failed: false,
-                    is_active: true
+                    is_active: true,
+                    priority: "high"
                },
                {
                     title: "Implement real-time data updates",
@@ -385,7 +465,8 @@ const employees = [
                     is_new: false,
                     is_accepted: true,
                     is_failed: false,
-                    is_active: true
+                    is_active: true,
+                    priority: "high"
                },
                {
                     title: "Develop custom chart components",
@@ -395,7 +476,8 @@ const employees = [
                     is_new: true,
                     is_accepted: false,
                     is_failed: false,
-                    is_active: true
+                    is_active: true,
+                    priority: "medium"
                },
                {
                     title: "Implement data export feature",
@@ -405,7 +487,8 @@ const employees = [
                     is_new: false,
                     is_accepted: true,
                     is_failed: false,
-                    is_active: true
+                    is_active: true,
+                    priority: "low"
                },
                {
                     title: "Conduct performance optimization",
@@ -415,7 +498,8 @@ const employees = [
                     is_new: true,
                     is_accepted: false,
                     is_failed: false,
-                    is_active: true
+                    is_active: true,
+                    priority: "high"
                }
           ]
      },
@@ -426,6 +510,13 @@ const employees = [
           username: "sarah.davis@example.com",
           password: "1234",
           is_admin: false,
+          taskCount: {
+               active: 5,
+               new: 3,
+               accepted: 3,
+               completed: 0,
+               failed: 0
+          },
           tasks: [
                {
                     title: "Implement user authentication system",
@@ -435,7 +526,8 @@ const employees = [
                     is_new: true,
                     is_accepted: true,
                     is_failed: false,
-                    is_active: true
+                    is_active: true,
+                    priority: "high"
                },
                {
                     title: "Add social login options",
@@ -445,7 +537,8 @@ const employees = [
                     is_new: false,
                     is_accepted: true,
                     is_failed: false,
-                    is_active: true
+                    is_active: true,
+                    priority: "medium"
                },
                {
                     title: "Implement password reset functionality",
@@ -455,7 +548,8 @@ const employees = [
                     is_new: true,
                     is_accepted: false,
                     is_failed: false,
-                    is_active: true
+                    is_active: true,
+                    priority: "high"
                },
                {
                     title: "Develop user profile management",
@@ -465,7 +559,8 @@ const employees = [
                     is_new: false,
                     is_accepted: true,
                     is_failed: false,
-                    is_active: true
+                    is_active: true,
+                    priority: "medium"
                },
                {
                     title: "Implement multi-factor authentication",
@@ -475,7 +570,8 @@ const employees = [
                     is_new: true,
                     is_accepted: false,
                     is_failed: false,
-                    is_active: true
+                    is_active: true,
+                    priority: "high"
                }
           ]
      }
@@ -501,5 +597,10 @@ export const setLocalStorage = ()=>{
 export const getLocalStorage = ()=>{
      const employeeData = JSON.parse(localStorage.getItem('employees'))
      const adminData = JSON.parse(localStorage.getItem('admins'))
-     console.log(employeeData,adminData)
+     return({employeeData,adminData})
 }
+
+// useEffect(() => {
+//   localStorage.clear()
+//   setLocalStorage()
+// })
